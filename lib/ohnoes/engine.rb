@@ -1,4 +1,5 @@
 module Ohnoes
-  class Railtie < Rails::Railtie
+  class Engine < Rails::Engine
+    isolate_namespace Ohnoes
   end
 end
