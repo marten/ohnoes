@@ -6,9 +6,9 @@ Gem::Specification.new do |gem|
   gem.name          = "ohnoes"
   gem.version       = Ohnoes::VERSION
   gem.summary       = %q{Abstraction Layer for catching exceptions}
-  gem.description   = %q{TODO: Description}
-  gem.license       = "MIT"
-  gem.authors       = ["Marten Veldthuis"]
+  gem.description   = %q{Ohnoes is a gem to report frontend errors using your existing backend error reporting.}
+  gem.license       = "BSD"
+  gem.authors       = ["Marten Veldthuis", "Mark IJbema"]
   gem.email         = "marten@veldthuis.com"
   gem.homepage      = "https://github.com/marten/ohnoes#readme"
 
@@ -18,6 +18,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
 
   gem.add_dependency 'rails', '>= 3.1'
+  gem.add_dependency 'appsignal'
 
   gem.add_development_dependency 'bundler', '~> 1.0'
   gem.add_development_dependency 'rake', '~> 10.0'

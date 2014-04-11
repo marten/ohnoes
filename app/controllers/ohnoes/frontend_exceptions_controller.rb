@@ -2,35 +2,6 @@ module Ohnoes
   class FrontendExceptionsController < ActionController::Base
     skip_before_action :verify_authenticity_token
 
-    class FrontendException < StandardError
-      attr_reader :js_class
-      def initialize(klass, message, backtrace)
-        @js_class = klass
-        @js_message = message
-        @js_backtrace = backtrace
-      end
-
-      def message
-        @js_message
-      end
-
-      def backtrace
-        @js_backtrace.map do |line|
-          line['file'] + ':' + line['number'] + ': in `' + line['method'] + "'"
-        end
-      end
-    end
-
-    class FrontendFormatter < Appsignal::Transaction::Formatter
-      def add_exception_to_hash!
-        hash[:exception] = {
-            :exception => exception.js_class,
-            :message => exception.message,
-            :backtrace => clean_backtrace(exception)
-        }
-      end
-    end
-
     def create
       notice = Hash.from_xml(CGI.unescape(request.body.read))
 
