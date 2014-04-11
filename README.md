@@ -2,7 +2,6 @@
 
 Ohnoes is a gem to report frontend errors using your existing backend error reporting.
 
-
 ## Installation
 
 Add this line to your application's Gemfile:
