@@ -16,6 +16,16 @@ Then add the following to your application.js
 //= require 'ohnoes'
 ```
 
+And mount the engine in your routes.rb
+
+```ruby
+Foobar::Application.routes.draw do
+  [...]
+  mount Ohnoes::Engine => '/ohnoes'
+  [...]
+end
+```
+
 ## Is it any good?
 
 Yes.
