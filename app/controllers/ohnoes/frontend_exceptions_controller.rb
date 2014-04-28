@@ -7,6 +7,7 @@ module Ohnoes
 
       error = notice["notice"]["error"]
       backtrace = error["backtrace"]["line"]
+      backtrace = [backtrace] unless backtrace.is_a? Array
 
       frontend_exception = FrontendException.new(error["class"], error["message"], backtrace)
 
