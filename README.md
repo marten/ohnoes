@@ -1,4 +1,4 @@
-# Pavlov [![Build Status](https://api.travis-ci.org/marten/ohnoes.png?branch=master)](http://travis-ci.org/marten/ohnoes) [![Gem Version](https://badge.fury.io/rb/ohnoes.png)](http://badge.fury.io/rb/ohnoes) [![Dependency Status](https://gemnasium.com/marten/ohnoes.png)](https://gemnasium.com/marten/ohnoes) [![Code Climate](https://codeclimate.com/github/marten/ohnoes.png)](https://codeclimate.com/github/marten/ohnoes)
+# Ohnoes [![Build Status](https://api.travis-ci.org/marten/ohnoes.png?branch=master)](http://travis-ci.org/marten/ohnoes) [![Gem Version](https://badge.fury.io/rb/ohnoes.png)](http://badge.fury.io/rb/ohnoes) [![Dependency Status](https://gemnasium.com/marten/ohnoes.png)](https://gemnasium.com/marten/ohnoes) [![Code Climate](https://codeclimate.com/github/marten/ohnoes.png)](https://codeclimate.com/github/marten/ohnoes)
 
 Ohnoes is a gem to report frontend errors using your existing backend error reporting.
 
